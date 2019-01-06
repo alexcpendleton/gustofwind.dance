@@ -17,22 +17,26 @@
         margin: 1em 1em 2em 1em;
       }
       .section {
-        height: 400px;
+        margin-bottom: 1em;
       }
       .section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "dragoon name video" "dragoon vocalizations video" "dragoon headshot video";
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "name name name" "dragoon middle video";
       }
 
       .name {
+        margin: 1em 0;
         grid-area: name;
-        margin: 0;
+        text-decoration: underline;
+      }
+      .middle {
+        grid-area: middle;
+        justify-self: center;
       }
 
       .vocalizations {
-        grid-area: vocalizations;
         padding: 0 1em;
       }
 
@@ -51,6 +55,7 @@
 
       .video {
         grid-area: video;
+        justify-self: center;
       }
     </style>
   </head>
@@ -72,13 +77,15 @@
               width="294"
             />
           </figure>
+          <div class="middle">
+            <figure class="headshot">
+              <img src="/lavitz.png" alt="Headshot of Lavitz" />
+            </figure>
+            <p class="vocalizations">
+              Hmm, hah, grah, hmm, hah, dah, grah! Gust of wind dance!
+            </p>
+          </div>
 
-          <figure class="headshot">
-            <img src="/lavitz.png" alt="Headshot of Lavitz" />
-          </figure>
-          <p class="vocalizations">
-            Hmm, hah, grah, hmm, hah, dah, grah! Gust of wind dance!
-          </p>
           <div class="video">
             <iframe
               width="560"
@@ -99,12 +106,14 @@
               width="294"
             />
           </figure>
-          <figure class="headshot">
-            <img src="/albert.png" alt="Headshot of Albert" />
-          </figure>
-          <p class="vocalizations">
-            Yah, hah, dah, hah, yah, huh, dah! Gust of wind, dance!
-          </p>
+          <div class="middle">
+            <figure class="headshot">
+              <img src="/albert.png" alt="Headshot of Albert" />
+            </figure>
+            <p class="vocalizations">
+              Yah, hah, dah, hah, yah, huah, dah! Gust of wind, dance!
+            </p>
+          </div>
           <div class="video">
             <iframe
               width="560"
