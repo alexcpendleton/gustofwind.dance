@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gust of Wind Dance!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      html {
+        background: #191919;
+        margin: 0;
+        padding: 0;
+        color: #5eff00;
+      }
+      .site-container {
+        text-align: center;
+        margin: 1em 1em 2em 1em;
+      }
+      .section {
+        height: 400px;
+      }
+      .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "dragoon name video" "dragoon vocalizations video" "dragoon headshot video";
+      }
+
+      .name {
+        grid-area: name;
+        margin: 0;
+      }
+
+      .vocalizations {
+        grid-area: vocalizations;
+        padding: 0 1em;
+      }
+
+      .headshot {
+        margin: 0;
+        padding: 0;
+        grid-area: headshot;
+      }
+
+      .dragoon {
+        width: 294px;
+        margin: 0;
+        padding: 0;
+        grid-area: dragoon;
+      }
+
+      .video {
+        grid-area: video;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <h1>
+          Gust of Wind Dance - A tribute the greatest addition in Legend of
+          Dragoon and the wielders of the Jade Dragoon!!
+        </h1>
+      </header>
+      <main>
+        <section class="section lavitz">
+          <h2 class="name">Lavitz Slambert (RIP)</h2>
+          <figure class="dragoon">
+            <img
+              src="/LavitzDragoon.jpg"
+              alt="Lavitz's Dragoon Form"
+              width="294"
+            />
+          </figure>
+
+          <figure class="headshot">
+            <img src="/lavitz.png" alt="Headshot of Lavitz" />
+          </figure>
+          <p class="vocalizations">
+            Hmm, hah, grah, hmm, hah, dah, grah! Gust of wind dance!
+          </p>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/uCpVXJote6s?start=14"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="section albert">
+          <h2 class="name">Albert, His Royal Highness of the Duchy of Basil</h2>
+          <figure class="dragoon">
+            <img
+              src="/AlbertDragoon.jpg"
+              alt="Albert's Dragoon Form"
+              width="294"
+            />
+          </figure>
+          <figure class="headshot">
+            <img src="/albert.png" alt="Headshot of Albert" />
+          </figure>
+          <p class="vocalizations">
+            Yah, hah, dah, hah, yah, huh, dah! Gust of wind, dance!
+          </p>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/l3jxYGaZKdo?start=18"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
